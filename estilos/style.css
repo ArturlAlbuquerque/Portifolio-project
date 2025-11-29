@@ -124,7 +124,7 @@ article {
 
 article h2 {
   color: var(--destaque);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .video-container {
@@ -182,6 +182,39 @@ article h2 {
   width: 30px;
   font-size: 1.5em;
 }
+ 
+.formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: 0.5s, border-color 0.5s;
+}
+
+.curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+.periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.instituicao {
+  font-size: 1.1em;  
+  color: var(--destaque-inverso);
+  
+}
+
+
 
 @media screen and (min-width: 768px) {
   #skill-container{
@@ -189,6 +222,6 @@ article h2 {
   }
 
   main {  
-  grid-template-columns: auto 70% auto;  
+  grid-template-columns: auto 75% auto;  
 }
 }
