@@ -186,6 +186,7 @@ article h2 {
 .formacao-container {
   display: flex;
   flex-direction: column-reverse;
+  gap: 20px;
 }
 
 .curso {
